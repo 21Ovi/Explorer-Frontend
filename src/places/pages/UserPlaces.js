@@ -11,6 +11,7 @@ const UserPlaces = () => {
   const { isLoading, error, sendRequest, clearError } = useHttpClient();
 
   const userId = useParams().userId;
+
   useEffect(() => {
     const fetchPlaces = async () => {
       try {
